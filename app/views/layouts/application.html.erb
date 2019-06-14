@@ -8,8 +8,23 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+
+    <header class="row">
+      <div class="col-3">
+        Live for Beads
+      </div>
+      <div class="col-4">
+        Beading Since the Dawn of time
+      </div>
+      <div class="col-5">
+        <%= link_to 'Beading Advice', 'beads/new' %>
+     </div>
+    </header>
+
+    <br class="clear" />
+
+
     <%= yield %>
   </body>
 </html>
